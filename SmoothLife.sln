@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmoothLife", "SmoothLife.csproj", "{4777D0CE-211F-4CEB-9E48-14568C15BD27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{4777D0CE-211F-4CEB-9E48-14568C15BD27}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
