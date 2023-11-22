@@ -1,0 +1,17 @@
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\SmoothLife.deps.json
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\SmoothLife.runtimeconfig.json
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\SmoothLife.dll
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\SmoothLife.pdb
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.csproj.AssemblyReference.cache
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.AssemblyInfoInputs.cache
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.AssemblyInfo.cs
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.csproj.CoreCompileInputs.cache
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.csproj.CopyComplete
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.dll
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\refint\SmoothLife.dll
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.pdb
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\SmoothLife.genruntimeconfig.cache
+C:\Users\Vilhelm\Dev\Godot\SmoothLife\.godot\mono\temp\obj\Debug\ref\SmoothLife.dll

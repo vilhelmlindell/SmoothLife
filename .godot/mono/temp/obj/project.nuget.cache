@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "a74Pmmj7JBKROpsDP3T572gfUU5QeSTRI0ooMADEa3HDsC2SREBL6B81p1JPQqJLuD99wYQ6KeqfXFhpzDDW7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vilhelm\\Dev\\Godot\\SmoothLife\\SmoothLife.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512",
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\Vilhelm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
