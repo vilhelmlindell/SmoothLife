@@ -19,7 +19,6 @@ grow_vertical = 2
 script = ExtResource("1_gdvui")
 run_simulation = true
 inner_circle_radius = 5
-outer_circle_radius = null
 
 [node name="TextureRect" type="TextureRect" parent="Simulation"]
 texture = SubResource("ImageTexture_x0sgw")

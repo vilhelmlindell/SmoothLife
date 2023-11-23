@@ -7,6 +7,12 @@ const IMAGE_FORMAT := Image.FORMAT_RGBAF
 @export var run_simulation: bool
 @export var inner_circle_radius: int
 @export var outer_circle_radius: int
+@export var birth_interval_1: float
+@export var birth_interval_2: float
+@export var death_interval_1: float
+@export var death_interval_2: float
+@export var alpha_n: float
+@export var alpha_m: float
 
 var rd: RenderingDevice
 var pipeline: RID
@@ -45,7 +51,13 @@ func _process(delta):
 	
 	var compute_list := rd.compute_list_begin()
 		
-	prepare_texture_uniform(compute_list)
+	var texture_uniform := prepare_texture_uniform()
+    var parameter_uniform := prepare_parameter_buffer()
+
+	var uniform_set := rd.uniform_set_create([output_tex_uniform], shader, 0)
+
+	rd.compute_list_bind_compute_pipeline(compute_list, pipeline)
+	rd.compute_list_bind_uniform_set(compute_list, uniform_set, 0)
 
 	dispatch_compute_shader(compute_list)
 
@@ -71,15 +83,16 @@ func prepare_texture_uniform(compute_list: int):
 	output_tex_uniform.uniform_type = RenderingDevice.UNIFORM_TYPE_IMAGE
 	output_tex_uniform.binding = 0
 	output_tex_uniform.add_id(output_texture)
-	
-	var uniform_set := rd.uniform_set_create([output_tex_uniform], shader, 0)
-
-	rd.compute_list_bind_compute_pipeline(compute_list, pipeline)
-	rd.compute_list_bind_uniform_set(compute_list, uniform_set, 0)\
+    return output_tex_uniform
 
 func prepare_parameter_buffer():
 	var parameter_data = PackedByteArray([inner_circle_radius, outer_circle_radius])
 	var buffer := rd.uniform_buffer_create(parameter_data.size(), parameter_data)
+	var uniform := RDUniform.new()
+	uniform.uniform_type = RenderingDevice.UNIFORM_TYPE_UNIFORM_BUFFER
+	uniform.binding = 1
+	uniform.add_id(buffer)
+	return uniform
 
 func dispatch_compute_shader(compute_list: int):
 	rd.compute_list_dispatch(compute_list, texture.get_width(), texture.get_height(), 1)
