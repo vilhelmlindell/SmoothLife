@@ -1,11 +1,13 @@
 #[compute]
 #version 450
 
+layout(local_size_x = 100, local_size_y = 1, local_size_z = 1) in;
+
 layout(set = 0, binding = 0, rgba32f) uniform image2D input_texture;
 
-layout(set = 0, binding = 1) uniform SimulationParameters {
-    float inner_radius;
-    float outer_radius;
+layout(set = 0, binding = 1) buffer SmoothLifeParameters {
+    int inner_radius;
+    int outer_radius;
     float birth_interval_1;
     float birth_interval_2;
     float death_interval_1;
@@ -65,12 +67,10 @@ float circle_filling(ivec2 texel_position, int radius) {
 void main() {
     ivec2 texel_position = ivec2(gl_GlobalInvocationID.xy);
 
-    // Example: Compute the circle_filling
-    float inner_filling = circle_filling(texel_position, 3);
-    float outer_filling = circle_filling(texel_position, 9);
-    float current_cell_state = cell_state(inner_filling, outer_filling);
+    float inner_filling = circle_filling(texel_position, inner_radius);
+    float outer_filling = circle_filling(texel_position, outer_radius);
+    float new_cell_state = cell_state(inner_filling, outer_filling);
 
-    // Example: Write the computed value back to the image
-    vec4 color = vec4(current_cell_state);
+    vec4 color = vec4(new_cell_state);
     imageStore(input_texture, texel_position, color);
 }
