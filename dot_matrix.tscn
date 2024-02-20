@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2ggo2gcy0jkw"]
+
+[ext_resource type="Shader" path="res://dot_matrix.gdshader" id="1_th3pd"]
+[ext_resource type="Texture2D" uid="uid://cixnuo6r47ak" path="res://icon.svg" id="2_yk0ti"]
+[ext_resource type="Script" path="res://Dispatcher.cs" id="5_l0dqx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sa8je"]
+shader = ExtResource("1_th3pd")
+shader_parameter/gridWidth = 1024
+
+[sub_resource type="Environment" id="Environment_07w6a"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 1.38
+glow_blend_mode = 0
+glow_hdr_threshold = 0.42
+glow_hdr_scale = 0.83
+
+[node name="Dot Matrix" type="Node2D"]
+
+[node name="Renderer" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_sa8je")
+position = Vector2(960, 540)
+scale = Vector2(15, 15)
+texture = ExtResource("2_yk0ti")
+metadata/_edit_lock_ = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_07w6a")
+
+[node name="Dispatcher" type="Node" parent="." node_paths=PackedStringArray("_renderer")]
+script = ExtResource("5_l0dqx")
+_autoStart = true
+_computeShader = "res://SmoothLife.glsl"
+_renderer = NodePath("../Renderer")

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://m74ytgk8m81r"
+path="res://.godot/imported/SmoothLife.glsl-1f5935d49b7a7affccf7300863c68b79.res"
+
+[deps]
+
+source_file="res://SmoothLife.glsl"
+dest_files=["res://.godot/imported/SmoothLife.glsl-1f5935d49b7a7affccf7300863c68b79.res"]
+
+[params]
+
